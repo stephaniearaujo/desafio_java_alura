@@ -8,7 +8,7 @@ public class Main {
         String nome = leitura.nextLine();
 
         System.out.println("Digite seu saldo inicial: ");
-        double saldoInicial = leitura.nextDouble();
+        double saldo = leitura.nextDouble();
 
         String textoInicial = """
                 *************************************
@@ -18,7 +18,7 @@ public class Main {
                 Nome:""" + nome +
                 """
 
-                Saldo inicial:""" + saldoInicial +
+                Saldo inicial:""" + saldo +
                 """
 
 
@@ -30,6 +30,6 @@ public class Main {
 
         //  Criar uma instância de Menu e chamar o método exibirMenu
         Menu menu = new Menu();
-        menu.exibirMenu(nome, saldoInicial);
+        menu.exibirMenu(nome, saldo);
     }
 }
